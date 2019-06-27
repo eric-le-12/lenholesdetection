@@ -6,7 +6,7 @@ Classifying Empty Holes and Len Holes
 
 ## Quick Start
 
-1.Run test.py
+### 1.Run test.py
 
 python test.py -im testimage.jpg -output path/to/output/directory
 
@@ -30,7 +30,7 @@ Argument List:
                         choosing k for selecting top frequent occured radius
                         for averaging [default None, recommended=3]
                         
-2. Select Region of interest
+### 2. Select Region of interest
  
 Select your Region of interest, which contain the tool with len holes. Press Enter. Press C to cancle.
 
@@ -44,7 +44,7 @@ Please note that, you should only bound the object by a sufficient rectangle. Si
  
 Example result:
 
-![alt text](https://imgur.com/FeQawGt)
+![alt text](https://i.imgur.com/FeQawGt.png)
 
 
 # Note: In the original RES files, the radii components are diameter. I think there were a typo error.
@@ -54,15 +54,20 @@ Example result:
 Plotting with R=33 in Res file. The 3rd components are actually Diameter
 
 ## WORKING PRINCIPLES:
-1.Detect all holes
+### 1.Detect all holes
 As the files are large over thousand of pixels per dimension, and only 3 samples are provided, my first approach using YOLO v2 (Darkflow implementation) and Faster rcnn seem to be ineffective. Therefore, it raise a need to extract the Region of Interest. After extracting the region of interest, some traditional image processing techniques should be used to locate the holes. 
+
 Holes are detected using Imaging Thresholding Techniques. The image is first converted to grayscale, filtered by GaussianBlur, then enhanced using Histogram Equalization. The binary image is formed by ADAPTIVE THRESHOLDING.
+
 The binary image is then fed to find contours. Any contours with number of vertices higher than 9 and children’s hierarchy is -1 would be considered as a circular hole.
-2. Feed each hole into CNN network
+
+### 2. Feed each hole into CNN network
 A pretrained CNN network is prepared to classify if the holes contain lens or not.
+
 The output would be a green circle around hole with lens and red circles around empty holes.
 
 ## Future Improvement:
 Due to the shortage of time, I have not performed an outstanding result. However, non-max suppression could be applied to remove overlapped region. A more accurate hole detection approach could be obtained via classical Sliding Window Techniques.
+
 
 Thank you for your reading.
