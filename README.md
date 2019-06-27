@@ -1,31 +1,51 @@
 # lenholesdetection
+
 Classifying Empty Holes and Len Holes
+
 # LOCATING AND CLASSIFYING LEN HOLES
+
 ## Quick Start
+
 1.Run test.py
+
 python test.py -im testimage.jpg -output path/to/output/directory
+
 Example
+
 python demo.py -im IMG2.png -output test
+
 Argument List: 
  -h, --help            show this help message and exit
+ 
   -im IMAGE_PATH, --image_path IMAGE_PATH
                         path to input image
+                        
   -output OUTPUT_PATH, --output_path OUTPUT_PATH
                         path to output directory to save image and res file
+                        
   -min_radius MIN_RADIUS, --min_radius MIN_RADIUS
                         minimum_radius [default 10]
+                        
   -top_k_radius TOP_K_RADIUS, --top_k_radius TOP_K_RADIUS
                         choosing k for selecting top frequent occured radius
                         for averaging [default None, recommended=3]
+                        
 2. Select Region of interest
  
-Select your Region of interest, which contain the tool with len holes. Press Enter. Press C to cancle
+Select your Region of interest, which contain the tool with len holes. Press Enter. Press C to cancle.
+
 A new window called “Region of Interest” will appear. Press Enter again to beginning analyzing process.
+
 After processed, some new windows will appear showing you the results. Press any key to exit.
+
 Res file and output images will be saved in your output folder.
+
 Please note that, you should only bound the object by a sufficient rectangle. Since the bigger area the ROI is, the more computation expense and false positive len holes arise. 
-Example:
  
+Example result:
+
+![alt text](https://imgur.com/FeQawGt)
+
 
 # Note: In the original RES files, the radii components are diameter. I think there were a typo error.
   
