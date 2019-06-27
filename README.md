@@ -6,6 +6,10 @@ Classifying Empty Holes and Len Holes
 
 ## Quick Start
 
+Update: Since i could not upload h5 file to GITHUB, please download it and put the h5 file in the same level with the 2 python files
+
+https://drive.google.com/file/d/17WlM1EtNHB10j89nFHUtgEmYwqzMCDmr/view?usp=sharing
+
 ### 1.Run test.py
 
 python test.py -im testimage.jpg -output path/to/output/directory
