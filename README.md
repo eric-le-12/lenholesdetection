@@ -52,7 +52,7 @@ Example result:
 ![alt text](https://i.imgur.com/FeQawGt.png)
 
 
-## Note: In the original RES files which i were given, the 3rd components in every line are actually diameter not radius. I think there were a typo error.
+## Note: In the original RES files which were given to me, the 3rd components in every line are actually diameter not radius. I think there were a typo error.
   
 ![alt text](https://i.imgur.com/6YXHOC1.png)
 
