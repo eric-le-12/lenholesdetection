@@ -10,11 +10,12 @@ Classifying Empty Holes and Len Holes
 
 python test.py -im testimage.jpg -output path/to/output/directory
 
-Example
+#### Example
 
 python demo.py -im IMG2.png -output test
 
-Argument List: 
+#### Argument List: 
+
  -h, --help            show this help message and exit
  
   -im IMAGE_PATH, --image_path IMAGE_PATH
@@ -47,8 +48,9 @@ Example result:
 ![alt text](https://i.imgur.com/FeQawGt.png)
 
 
-# Note: In the original RES files, the radii components are diameter. I think there were a typo error.
+## Note: In the original RES files, the radii components are diameter. I think there were a typo error.
   
+![alt text](https://i.imgur.com/6YXHOC1.png)
 
  
 Plotting with R=33 in Res file. The 3rd components are actually Diameter
