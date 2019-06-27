@@ -41,6 +41,8 @@ Select your Region of interest, which contain the tool with len holes. Press Ent
 
 A new window called “Region of Interest” will appear. Press Enter again to beginning analyzing process.
 
+It will take you a little bit time to complete the process. In my CPU corei5 6200U the execution time is approx. 50 seconds.
+
 After processed, some new windows will appear showing you the results. Press any key to exit.
 
 Res file and output images will be saved in your output folder.
