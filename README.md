@@ -16,7 +16,7 @@ python test.py -im testimage.jpg -output path/to/output/directory
 
 #### Example
 
-python demo.py -im IMG2.png -output test
+python test.py -im IMG2.png -output test
 
 #### Argument List: 
 
